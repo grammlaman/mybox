@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-size: 1em; }
+em, strong, i, b, address, cite {
+  font-style: normal;
+  font-weight: 500; }
+ul {
+  list-style: none; }
+input[type='submit'], button {
+  cursor: pointer;
+  background: transparent;
+  border: 0; }
+input[type='checkbox'],input[type='radio']{
+  display: none;
+}
+img {
+  max-width: 100%; }
+@font-face {
+  src: url(fonts/roboto-regular.ttf);
+  font-family: "reg"; }
+@font-face {
+  src: url(fonts/roboto-bold.ttf);
+  font-family: "bold"; }
+body{
+  font-family: reg;
+  background-color: #000;
+}
+body,a{
+  color: #fff;
+}
+section{
+  width: 300px;
+  margin: 0 auto;
+}
+.head{
+  height: 76px;
+  overflow: hidden;
+  background-color: #0e1114;
+}
+.head .row{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  transition: .35s ease;
+}
+.head .row:first-child{
+  padding-bottom: 0;
+}
+.head .row:last-child{
+  padding-top: 0;
+}
+.head-nav,.head-sublist{
+  width: 100%;
+}
+.head-logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.burger:before,.burger:after,.burger div{
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  content: '';
+}
+.burger div{
+  margin: 7px 0;
+}
+#burger:checked ~ .head{
+  height: 100vh;
+}
+.head-nav{
+  margin-top: 5vh;
+}
+.head-second-list{
+  height: 50px;
+  display: flex;
+}
+.head-second-list-item{
+  width: 42px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: .35s ease;
+}
+.head-list-item,.head-sublist-item,.head-second-list{
+  margin-bottom: 2vh;
+  margin-left: 20px;
+}
+.head-search input{
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  background-color: transparent;
+  text-align: right;
+  font-family: reg;
+}
+.head-user div{
+  display: flex;
+  justify-content: space-between;
+}
+.head-search input,.head-user div{
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  transition: .35s ease;
+}
+.head-search label div:after,.head-search label div:before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  transform: rotate(45deg) translate(2px,1px);
+  background-color: #fff;
+}
+.head-search label div:after{
+  transform: rotate(-45deg)
+}
+#head-search:checked ~ ul li,
+#head-user:checked ~ ul li{
+  display: none;
+  width: 0;
+}
+#head-search:checked ~ ul .head-search,
+#head-user:checked ~ ul .head-user{
+  display: flex;
+  width: auto;
+}
+#head-search:checked ~ ul .head-search input,
+#head-user:checked ~ ul .head-user div{
+  width: 200px;
+  margin-right: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+#head-search:checked ~ ul .head-search label img{
+  display: none;
+}
+#head-search:checked ~ ul .head-search label div:after,
+#head-search:checked ~ ul .head-search label div:before{
+  display: block;
+}
+
+
+@media screen and (min-width: 768px){
+  section{
+    width: 748px;
+  }
+  .burger{
+    display: none;
+  }
+  .head{
+    height: auto;
+    background-color: transparent;
+  }
+  .head .row:first-child{
+    padding: 24px 0 22px;
+      background-color: #0e1114;
+  }
+  .head .row:first-child section,.head-nav,.head-list,.head-sublist{
+    display: flex;
+  }
+  .head-logo,.head-nav{
+    width: auto;
+  }
+  .head-list-item,.head-second-list{
+    margin-left: 10px;
+  }
+  .head-list-item:first-child{
+    margin-left: 0;
+  }
+  .head-list-item,.head-second-list{
+    margin-bottom: 0;
+  }
+  .head-nav{
+    margin-top: 0;
+    align-items: center;
+    margin-left: auto;
+  }
+  .head-sublist{
+    width: 100%;
+    padding: 27px 0 32px;
+    justify-content: space-between;
+  }
+  .head-sublist-item{
+    margin: 0;
+  }
+  .head-sublist-item a{
+    color: #ff2337;
+  }
+
+  #head-search:checked ~ ul .head-search input,
+  #head-user:checked ~ ul .head-user div{
+    width: 160px;
+  }
+}
+@media screen and (min-width:1200px){
+  section{
+    width: 1200px;
+  }
+}

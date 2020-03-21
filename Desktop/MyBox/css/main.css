@@ -6,18 +6,14 @@
     outline: 0;
     text-decoration: none;
     -webkit-text-size-adjust: 100%; }
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-size: 1em; }
-
 em, strong, i, b, address, cite {
     font-style: normal;
     font-weight: 500; }
-
 ul {
     list-style: none; }
-
 input[type='submit'], button {
     cursor: pointer;
     background: transparent;
@@ -28,10 +24,8 @@ input[type="checkbox"], input[type="radio"]{
 label{
     cursor: pointer;
 }
-
 img {
     max-width: 100%; }
-
 @font-face {
     font-family: reg;
     src: url("fonts/Montserrat-regular.ttf");
@@ -58,15 +52,43 @@ body{
 body,button{
     color: #fff;
 }
-
 header nav,.aside-menu,.right{
     padding: 0 5%;
 }
 
+header nav, .head-burger, .head-menu, .aside-menu, .aside-item label, .slide-text, .slide-list-item{
+    display: flex;}
+header nav, .head-menu, .aside-menu, .aside-item label, .slide-list-item, .about, .cont, .buy{
+    align-items: center;}
+header nav, .slide-text{
+    justify-content: space-evenly;}
+.head-menu, .aside-menu{
+    justify-content: space-around;}
+.slide-text,.head-burger{
+    flex-direction: column;}
+.head-burger:before,.head-burger:after,.head-menu label:after,aside:after{
+    display: block;
+    content: '';}
+.aside-item label,.slide-list-item span{
+    font-family: light;}
+.slide-desc,.slide-subtitle,.slide-button span{
+    font-family: reg;}
+.head-logo,.head-burger,.head-menu{
+    z-index: 100;}
+.slide-button div,.head-menu,aside:after,.aside-menu,.right,.cont,.about,.buy,.slider,.slide{
+    width: 100%;}
+.slide-button div,.head-menu,.right,.cont,.about,.buy,.slide{
+    position: absolute;}
+.slide-button div,.slide{
+    top: 0;}
+.slide-button div,.right,.cont,.about,.buy,.slide{
+    left: 0;}
+.head-menu,.right,.cont,.about,.buy,.slide,.slide-button div,.slide-button span,.slide-button svg path{
+    transition: .4s ease;
+}
+
+
 header nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -74,12 +96,8 @@ header nav{
 .head-logo img{
     width: 50px;
 }
-
 .head-burger{
     height: 26px;
-    width: 40px;
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -89,33 +107,19 @@ header nav{
     background-color: #fff;
 }
 .head-burger:before,.head-burger:after{
-    content: '';
-    display: block;
     width: 40px;
 }
-
 .head-logo,.head-burger{
     position: relative;
-    z-index: 100;
 }
-
 .head-menu{
-    width: 100%;
     padding: 25px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    z-index: 100;
     top: 80px;
     transform: translateY(-30px);
     visibility: hidden;
     opacity: 0;
-    transition: .5s ease;
 }
 .head-menu label:after{
-    content: '';
-    display: block;
     width: 50%;
     height: 1px;
     margin-top: 5px;
@@ -131,70 +135,47 @@ header nav{
     opacity: 1;
 }
 
+
+
 aside:after{
-    content: '';
-    display: block;
-    width: 100%;
     height: 1px;
     background-color: #fff;
 }
 .aside-menu{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-bottom: 10px;
 }
 .aside-item label{
     width: 42px;
     height: 42px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: light;
 }
+
+
 
 main{
     position: relative;
 }
 .right,.cont,.about,.buy{
     transform: translateY(2000px);
-    width: 100%;
-    position: absolute;
     top: 50px;
-    left: 0;
-    transition: .5s ease;
 }
-
 .slider{
-    width: 100%;
     height: calc(100vh - 154px);
     position: relative;
 }
 .slide{
-    width: 100%;
     height: calc(100vh - 154px);
     padding: 10px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
     transform: translateX(120%);
-    transition: .35s ease;
 }
 .slide-text{
     height: calc(100vh - 154px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 .slide-title,.slide-subtitle{
     text-transform: uppercase;
 }
 .slide-title{
     font-size: 24px;
-}
-.slide-desc,.slide-subtitle{
-    font-family: reg;
 }
 .slide-desc{
     opacity: 50%;
@@ -209,35 +190,14 @@ main{
 }
 .slide-button span{
     margin-right: 129px;
-    font-family: reg;
 }
 .slide-button div{
-    width: 100%;
     height: 48px;
     background-color: #fff;
     transform: translateX(100%);
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
 }
-.slide-button div,.slide-button span,.slide-button svg path{
-    transition: .35s ease;
-}
-
-.slide-button:hover div{
-    transform: translateX(0);
-}
-.slide-button:hover span{
-    color: #1C1C1C;
-}
-.slide-button:hover svg path{
-    stroke: #1C1C1C;
-}
-
 .slide-list-item{
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 .slide-list-item:last-child{
@@ -247,9 +207,8 @@ main{
     width: 30px;
     margin-right: 12px;
 }
-.slide-list-item span{
-    font-family: light;
-}
+
+
 
 .about,.cont,.buy{
     text-align: center;
@@ -280,12 +239,15 @@ main{
 #about-us:checked ~ main .about,
 #contacts:checked ~ main .cont,
 #buy:checked ~ main .buy{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 @media screen and (min-width: 600px){
-    .aside-menu,.right,header nav{
+    .aside-menu,.right,header nav,.head-menu,.slide{
         padding: 0;
+    }
+    header nav,.slide-list,.slide-text{
+        justify-content: space-between;
     }
     header{
         width: 100%;
@@ -296,7 +258,6 @@ main{
     }
     header nav{
         width: 100%;
-        justify-content: space-between;
     }
     .head-burger{
         display: none;
@@ -306,7 +267,6 @@ main{
     }
     .head-menu{
         width: 330px;
-        padding: 0;
         opacity: 1;
         visibility: visible;
         position: relative;
@@ -319,7 +279,6 @@ main{
     .head-menu-item:last-child{
         margin-right: 0;
     }
-
     main{
         display: flex;
         align-items: center;
@@ -346,7 +305,6 @@ main{
     .aside-item{
         margin: 10px 0;
     }
-
     .right,.cont,.buy,.about{
         top: 0;
         left: 75px;
@@ -356,18 +314,13 @@ main{
     .right{
         padding: 0 20px;
     }
-    .slide{
-        padding: 0;
-    }
     .slide-text{
-        justify-content: space-between;
         padding-bottom: 20px;
     }
     .slide-list{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
     .slide-list-item{
         margin-bottom: 0;
@@ -528,5 +481,24 @@ main{
     }
     .slide-list-item img{
         width: 70px;
+    }
+
+
+
+    .head-menu-item:hover label:after{
+        background-color: #fff;
+    }
+    .aside-item label:hover{
+        border: 1px solid #F62840;
+        border-radius: 36px;
+    }
+    .slide-button:hover div{
+        transform: translateX(0);
+    }
+    .slide-button:hover span{
+        color: #1C1C1C;
+    }
+    .slide-button:hover svg path{
+        stroke: #1C1C1C;
     }
 }

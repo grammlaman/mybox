@@ -55,7 +55,6 @@ body,button{
 header nav,.aside-menu,.right{
     padding: 0 5%;
 }
-
 header nav, .head-burger, .head-menu, .aside-menu, .aside-item label, .slide-text, .slide-list-item{
     display: flex;}
 header nav, .head-menu, .aside-menu, .aside-item label, .slide-list-item, .about, .cont, .buy{
@@ -83,11 +82,9 @@ header nav, .slide-text{
     top: 0;}
 .slide-button div,.right,.cont,.about,.buy,.slide{
     left: 0;}
-.head-menu,.right,.cont,.about,.buy,.slide,.slide-button div,.slide-button span,.slide-button svg path{
+.head-menu,.right,.cont,.about,.buy,.slide,.slide-button div,.slide-button span,.slide-button svg path {
     transition: .4s ease;
 }
-
-
 header nav{
     flex-wrap: wrap;
     padding-top: 20px;
@@ -134,9 +131,6 @@ header nav{
     visibility: visible;
     opacity: 1;
 }
-
-
-
 aside:after{
     height: 1px;
     background-color: #fff;
@@ -149,9 +143,6 @@ aside:after{
     height: 42px;
     justify-content: center;
 }
-
-
-
 main{
     position: relative;
 }
@@ -207,15 +198,10 @@ main{
     width: 30px;
     margin-right: 12px;
 }
-
-
-
 .about,.cont,.buy{
     text-align: center;
     padding-top: 100px;
 }
-
-
 #slide-1:checked ~ main aside ul .aside-item:first-child label,
 #slide-2:checked ~ main aside ul .aside-item:nth-child(2) label,
 #slide-3:checked ~ main aside ul .aside-item:nth-child(3) label,
@@ -241,7 +227,6 @@ main{
 #buy:checked ~ main .buy{
     transform: translateY(0);
 }
-
 @media screen and (min-width: 600px){
     .aside-menu,.right,header nav,.head-menu,.slide{
         padding: 0;
@@ -310,7 +295,6 @@ main{
         left: 75px;
         width: calc(100% - 75px);
     }
-
     .right{
         padding: 0 20px;
     }
@@ -326,7 +310,6 @@ main{
         margin-bottom: 0;
     }
 }
-
 @media screen and (min-width: 768px){
     header nav{
         justify-content: flex-start;
@@ -334,14 +317,12 @@ main{
     .head-menu{
         margin-left: 85px;
     }
-
     .head-logo img{
         width: 50px;
     }
     .aside-menu{
         width: 89px;
     }
-
     .cont,.buy,.about{
         padding-top: 250px;
     }
@@ -368,7 +349,6 @@ main{
         margin-bottom: 20px;
     }
 }
-
 @media screen and (min-width: 1004px){
     .head-logo img{
         width: 83px;
@@ -418,7 +398,6 @@ main{
         margin-bottom: 20px;
     }
 }
-
 @media screen and (min-width: 1200px){
     header{
         padding: 25px 40px;
@@ -482,9 +461,6 @@ main{
     .slide-list-item img{
         width: 70px;
     }
-
-
-
     .head-menu-item:hover label:after{
         background-color: #fff;
     }

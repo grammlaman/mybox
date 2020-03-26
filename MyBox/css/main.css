@@ -40,6 +40,9 @@ section{
   width: 300px;
   margin: 0 auto;
 }
+.head-second-list-item,.head .row,.head-search input,.head-user div{
+  transition: .35s ease;
+}
 .head{
   height: 76px;
   overflow: hidden;
@@ -49,7 +52,6 @@ section{
   padding: 10px 0;
   display: flex;
   flex-direction: column;
-  transition: .35s ease;
 }
 .head .row:first-child{
   padding-bottom: 0;
@@ -91,7 +93,9 @@ section{
   display: flex;
   align-items: center;
   margin-right: 10px;
-  transition: .35s ease;
+}
+.head-second-list-item label{
+  cursor: pointer;
 }
 .head-list-item,.head-sublist-item,.head-second-list{
   margin-bottom: 2vh;
@@ -105,6 +109,12 @@ section{
   text-align: right;
   font-family: reg;
 }
+.head-search-label{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 .head-user div{
   display: flex;
   justify-content: space-between;
@@ -113,7 +123,6 @@ section{
   opacity: 0;
   visibility: hidden;
   width: 0;
-  transition: .35s ease;
 }
 .head-search label div:after,.head-search label div:before{
   content: '';
@@ -206,5 +215,32 @@ section{
 @media screen and (min-width:1200px){
   section{
     width: 1200px;
+  }
+  .head-list-item{
+    margin-right: 20px;
+  }
+  .head-list-item,.head-second-list{
+    margin-left: 0;
+  }
+  .head-list-item a:hover,.head-sublist-item:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #head-search:checked ~ ul li,
+  #head-user:checked ~ ul li{
+    display: flex;
+    width: auto;
   }
 }

@@ -7,100 +7,477 @@
   <title>My Box</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<input type="checkbox" id="burger">
-  <header class='head'>
-    <div class="row">
-      <section>
-        <div class="head-logo">
-          <a href="#">
-            <img src="img/head-logo.png" alt="">
-          </a>
-          <label for="burger" class="burger">
-            <div></div>
-          </label>
+  <body>
+    <input type="checkbox" id="burger">
+    <header class='head'>
+      <div class="row">
+        <section>
+          <div class="head-logo">
+            <a href="#">
+              <img src="img/head-logo.png" alt="">
+            </a>
+            <label for="burger" class="burger">
+              <div></div>
+            </label>
+          </div>
+          <nav class="head-nav">
+            <ul class="head-list">
+              <li class="head-list-item">
+                <a href="#">
+                  Как купить
+                </a>
+              </li>
+              <li class="head-list-item">
+                <a href="#">
+                  Оплата
+                </a>
+              </li>
+              <li class="head-list-item">
+                <a href="#">
+                  Доставка
+                </a>
+              </li>
+              <li class="head-list-item">
+                <a href="#">
+                  О нас
+                </a>
+              </li>
+            </ul>
+            <input type="checkbox" id='head-search'>
+            <input type="checkbox" id='head-user'>
+            <ul class='head-second-list'>
+              <li class="head-second-list-item head-search">
+                <input type='text' placeholder="Поиск">
+                <label for='head-search' class="head-search-label">
+                  <img src="img/head-search.png" alt="">
+                  <div></div>
+                </label>
+              </li>
+              <li class="head-second-list-item">
+                <a href="#">
+                  <img src="img/head-phone.png" alt="">
+                </a>
+              </li>
+              <li class="head-second-list-item head-user">
+                <div>
+                  <a href="#">Регистрация</a>
+                  <span>/</span>
+                  <a href="#">Вход</a>
+                </div>
+                <label for='head-user'>
+                  <img src="img/head-user.png" alt="">
+                </label>
+              </li>
+              <li class="head-second-list-item">
+                <a href="#">
+                  <img src="img/head-cart.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+      <div class="row">
+        <section>
+          <ul class="head-sublist">
+            <li class="head-sublist-item">
+              <a href="#">Ноутбуки</a>
+            </li>
+            <li class="head-sublist-item">
+              <a href="#">Готовые сборки</a>
+            </li>
+            <li class="head-sublist-item">
+              <a href="#">Майнинг фермы</a>
+            </li>
+            <li class="head-sublist-item">
+              <a href="#">Перифирия</a>
+            </li>
+            <li class="head-sublist-item">
+              <a href="#">Комплектующие</a>
+            </li>
+            <li class="head-sublist-item">
+              <a href="#">Услуги</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider">
+        <input type="radio" name="main-slider" id="slide-1" checked>
+        <input type="radio" name="main-slider" id="slide-2">
+        <input type="radio" name="main-slider" id="slide-3">
+        <input type="radio" name="main-slider" id="slide-4">
+        <input type="radio" name="main-slider" id="slide-5">
+        <div class="slide slide-1">
+          <div class="slide-text">
+            <h2 class="slide-title">Сверхмощный</h2>
+            <h3 class="slide-subtitle">игровой компьютер</h3>
+            <ul class="slide-pluses">
+              <li class="slide-pluses-item">Intel core i9 X-series</li>
+              <li class="slide-pluses-item">GeForce GTX 1080 Ti</li>
+              <li class="slide-pluses-item">Asus Maximus IX Formula LGA1151</li>
+              <li class="slide-pluses-item">DDR4 16Gb KingstonHyperX</li>
+            </ul>
+            <strong class="slide-strong">Доставка бесплатно</strong>
+            <ul class="slide-logos">
+              <li class="slide-logos-item"><img src="img/slide-list-1.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-2.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-3.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-4.png" alt=""></li>
+            </ul>
+          </div>
         </div>
-        <nav class="head-nav">
-          <ul class="head-list">
-            <li class="head-list-item">
-              <a href="#">
-                Как купить
-              </a>
-            </li>
-            <li class="head-list-item">
-              <a href="#">
-                Оплата
-              </a>
-            </li>
-            <li class="head-list-item">
-              <a href="#">
-                Доставка
-              </a>
-            </li>
-            <li class="head-list-item">
-              <a href="#">
-                О нас
-              </a>
-            </li>
-          </ul>
-          <input type="checkbox" id='head-search'>
-          <input type="checkbox" id='head-user'>
-          <ul class='head-second-list'>
-            <li class="head-second-list-item head-search">
-              <input type='text' placeholder="Поиск">
-              <label for='head-search' class="head-search-label">
-                <img src="img/head-search.png" alt="">
-                <div></div>
-              </label>
-            </li>
-            <li class="head-second-list-item">
-              <a href="#">
-                <img src="img/head-phone.png" alt="">
-              </a>
-            </li>
-            <li class="head-second-list-item head-user">
-              <div>
-                <a href="#">Регистрация</a>
-                <span>/</span>
-                <a href="#">Вход</a>
-              </div>
-              <label for='head-user'>
-                <img src="img/head-user.png" alt="">
-              </label>
-            </li>
-            <li class="head-second-list-item">
-              <a href="#">
-                <img src="img/head-cart.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </div>
-    <div class="row">
-      <section>
-        <ul class="head-sublist">
-          <li class="head-sublist-item">
-            <a href="#">Ноутбуки</a>
+        <div class="slide slide-2">
+          <div class="slide-text">
+            <h2 class="slide-title">Слайд-2</h2>
+            <h3 class="slide-subtitle">игровой компьютер</h3>
+            <ul class="slide-pluses">
+              <li class="slide-pluses-item">Intel core i9 X-series</li>
+              <li class="slide-pluses-item">GeForce GTX 1080 Ti</li>
+              <li class="slide-pluses-item">Asus Maximus IX Formula LGA1151</li>
+              <li class="slide-pluses-item">DDR4 16Gb KingstonHyperX</li>
+            </ul>
+            <strong class="slide-strong">Доставка бесплатно</strong>
+            <ul class="slide-logos">
+              <li class="slide-logos-item"><img src="img/slide-list-1.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-2.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-3.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-4.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide-text">
+            <h2 class="slide-title">Слайд-3</h2>
+            <h3 class="slide-subtitle">игровой компьютер</h3>
+            <ul class="slide-pluses">
+              <li class="slide-pluses-item">Intel core i9 X-series</li>
+              <li class="slide-pluses-item">GeForce GTX 1080 Ti</li>
+              <li class="slide-pluses-item">Asus Maximus IX Formula LGA1151</li>
+              <li class="slide-pluses-item">DDR4 16Gb KingstonHyperX</li>
+            </ul>
+            <strong class="slide-strong">Доставка бесплатно</strong>
+            <ul class="slide-logos">
+              <li class="slide-logos-item"><img src="img/slide-list-1.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-2.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-3.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-4.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide slide-4">
+          <div class="slide-text">
+            <h2 class="slide-title">Слайд-4</h2>
+            <h3 class="slide-subtitle">игровой компьютер</h3>
+            <ul class="slide-pluses">
+              <li class="slide-pluses-item">Intel core i9 X-series</li>
+              <li class="slide-pluses-item">GeForce GTX 1080 Ti</li>
+              <li class="slide-pluses-item">Asus Maximus IX Formula LGA1151</li>
+              <li class="slide-pluses-item">DDR4 16Gb KingstonHyperX</li>
+            </ul>
+            <strong class="slide-strong">Доставка бесплатно</strong>
+            <ul class="slide-logos">
+              <li class="slide-logos-item"><img src="img/slide-list-1.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-2.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-3.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-4.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide slide-5">
+          <div class="slide-text">
+            <h2 class="slide-title">Слайд-5</h2>
+            <h3 class="slide-subtitle">игровой компьютер</h3>
+            <ul class="slide-pluses">
+              <li class="slide-pluses-item">Intel core i9 X-series</li>
+              <li class="slide-pluses-item">GeForce GTX 1080 Ti</li>
+              <li class="slide-pluses-item">Asus Maximus IX Formula LGA1151</li>
+              <li class="slide-pluses-item">DDR4 16Gb KingstonHyperX</li>
+            </ul>
+            <strong class="slide-strong">Доставка бесплатно</strong>
+            <ul class="slide-logos">
+              <li class="slide-logos-item"><img src="img/slide-list-1.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-2.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-3.png" alt=""></li>
+              <li class="slide-logos-item"><img src="img/slide-list-4.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="slider-dots">
+          <li class="slider-dots-item">
+            <label for="slide-1">
+              <img src="img/slide-dot.png" alt="" class="slider-dot">
+              <img src="img/slide-dot-active.png" alt="" class="slider-dot-active">
+            </label>
           </li>
-          <li class="head-sublist-item">
-            <a href="#">Готовые сборки</a>
+          <li class="slider-dots-item">
+            <label for="slide-2">
+              <img src="img/slide-dot.png" alt="" class="slider-dot">
+              <img src="img/slide-dot-active.png" alt="" class="slider-dot-active">
+            </label>
           </li>
-          <li class="head-sublist-item">
-            <a href="#">Майнинг фермы</a>
+          <li class="slider-dots-item">
+            <label for="slide-3">
+              <img src="img/slide-dot.png" alt="" class="slider-dot">
+              <img src="img/slide-dot-active.png" alt="" class="slider-dot-active">
+            </label>
           </li>
-          <li class="head-sublist-item">
-            <a href="#">Перифирия</a>
+          <li class="slider-dots-item">
+            <label for="slide-4">
+              <img src="img/slide-dot.png" alt="" class="slider-dot">
+              <img src="img/slide-dot-active.png" alt="" class="slider-dot-active">
+            </label>
           </li>
-          <li class="head-sublist-item">
-            <a href="#">Комплектующие</a>
-          </li>
-          <li class="head-sublist-item">
-            <a href="#">Услуги</a>
+          <li class="slider-dots-item">
+            <label for="slide-5">
+              <img src="img/slide-dot.png" alt="" class="slider-dot">
+              <img src="img/slide-dot-active.png" alt="" class="slider-dot-active">
+            </label>
           </li>
         </ul>
+      </div>
+      <section>
+        <div class="ready">
+          <h3 class="block-title">Готовые сборки:</h3>
+          <ul class="ready-list">
+            <li class="ready-list-item">
+              <a href="#">
+                <div class="ready-row">
+                  <img src="img/ready-comp-1.png" alt="">
+                  <span class="ready-row-span">
+                    <span>Хорошие</span>
+                    <span>современные</span>
+                    <span>сборки</span>
+                    <span>компьютеров по</span>
+                    <span>доступным ценам</span>
+                    <span>От 100 000тг</span>
+                  </span>
+                </div>
+                <div class="ready-list-item-title">
+                  <div class="ready-list-items-stars">
+                    <img src="img/ready-star.png" alt="">
+                  </div>
+                  <h4>Basic</h4>
+                </div>
+              </a>
+            </li>
+            <li class="ready-list-item">
+              <a href="#">
+                <div class="ready-row">
+                  <img src="img/ready-comp-2.png" alt="">
+                  <span class="ready-row-span">
+                    <span>Сборки для</span>
+                    <span>геймеров</span>
+                    <span>Отличное</span>
+                    <span>соотношение цены и</span>
+                    <span>производительности</span>
+                    <span>От 250 000тг</span>
+                  </span>
+                </div>
+                <div class="ready-list-item-title">
+                  <div class="ready-list-items-stars">
+                    <img src="img/ready-star.png" alt="">
+                    <img src="img/ready-star.png" alt="">
+                  </div>
+                  <h4>Premium</h4>
+                </div>
+              </a>
+            </li>
+            <li class="ready-list-item">
+              <a href="#">
+                <div class="ready-row">
+                  <img src="img/ready-comp-3.png" alt="">
+                  <span class="ready-row-span">
+                    <span>Топовые сборки</span>
+                    <span>от MyBox</span>
+                    <span>для тех, кто</span>
+                    <span>жаждет</span>
+                    <span>максимума</span>
+                    <span>От 500 000тг</span>
+                  </span>
+                </div>
+                <div class="ready-list-item-title">
+                  <div class="ready-list-items-stars">
+                    <img src="img/ready-star.png" alt="">
+                    <img src="img/ready-star.png" alt="">
+                    <img src="img/ready-star.png" alt="">
+                  </div>
+                  <h4>Ultra</h4>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="new">
+          <h3 class="block-title">Новинки:</h3>
+          <ul class="new-list">
+            <li class="new-list-item new-list-item-1">
+              <a href="#">
+                <div class="new-row">
+                  <img src="img/new-list-item-1.png" alt="">
+                </div>
+                <div class="new-list-item-title">
+                  <img src="img/slide-list-2.png" alt="">
+                  <h4>GeForce gtx 1080 ti</h4>
+                </div>
+              </a>
+            </li>
+            <li class="new-list-item new-list-item-2">
+              <a href="#">
+                <div class="new-row">
+                  <img src="img/new-list-item-2.png" alt="">
+                </div>
+                <div class="new-list-item-title">
+                  <img src="img/slide-list-4.png" alt="">
+                  <h4>ASUS G701VI</h4>
+                </div>
+              </a>
+            </li>
+            <li class="new-list-item new-list-item-3">
+              <a href="#">
+                <div class="new-row">
+                  <img src="img/new-list-item-3.png" alt="">
+                </div>
+                <div class="new-list-item-title">
+                  <img src="img/new-list-item-title-3.png" alt="">
+                  <h4>HyperX cloud</h4>
+                </div>
+              </a>
+            </li>
+            <li class="new-list-item new-list-item-2">
+              <a href="#">
+                <div class="new-row">
+                  <img src="img/new-list-item-2.png" alt="">
+                </div>
+                <div class="new-list-item-title">
+                  <img src="img/slide-list-4.png" alt="">
+                  <h4>ASUS G701VI</h4>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="block-news">
+          <div class="news">
+            <h3 class="block-title">Новости и акции:</h3>
+            <input type="radio" name="news-slider" id="news-1" checked>
+            <input type="radio" name="news-slider" id="news-2">
+            <div class="news-label-row">
+              <label for="news-1" class="news-label">
+                <img src="img/news-title.png" alt="">
+                <img src="img/news-title-hover.png" alt="">
+                <span>Новости</span>
+              </label>
+              <label for="news-2" class="actions-label">
+                <img src="img/actions-title.png" alt="">
+                <img src="img/actions-title-hover.png" alt="">
+                <span>Акции</span>
+              </label>
+            </div>
+            <div class="news-cont-row">
+              <div class="news-cont">
+                <ul class="news-list">
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">11.12.2017</h6>
+                      <p class="news-list-item-desc">MyBox - технический партнер выставки GAME PLANET 2.0</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">07.12.2017</h6>
+                      <p class="news-list-item-desc">Играй в 4К вместе с GeForce 1080 Ti</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">28.11.2017</h6>
+                      <p class="news-list-item-desc">MyBox - технический партнер турнира по PUBG в GameStadium</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">28.11.2017</h6>
+                      <p class="news-list-item-desc">Adrenalin Cyber League 2017 на компьютерах MyBox</p>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news-full">Посмотреть все новости</a>
+              </div>
+              <div class="actions-cont">
+                <ul class="news-list">
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">11.12.2020</h6>
+                      <p class="news-list-item-desc">MyBox - технический партнер выставки GAME PLANET 2.0</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">07.12.2020</h6>
+                      <p class="news-list-item-desc">Играй в 4К вместе с GeForce 1080 Ti</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">28.11.2017</h6>
+                      <p class="news-list-item-desc">MyBox - технический партнер турнира по PUBG в GameStadium</p>
+                    </a>
+                  </li>
+                  <li class="news-list-item">
+                    <a href="#">
+                      <h6 class="news-list-item-date">28.11.2017</h6>
+                      <p class="news-list-item-desc">Adrenalin Cyber League 2017 на компьютерах MyBox</p>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news-full">Посмотреть все акции</a>
+              </div>
+            </div>
+          </div>
+          <div class="advantages">
+            <h3 class="block-title">Преимущества:</h3>
+            <ul class="advantages-list">
+              <li class="advantages-list-item">
+                <div class="advantages-img-cont">
+                  <img src="img/advantages-1.png" alt="">
+                </div>
+                <div class="advantages-list-item-text">
+                  <h6>Лучшие комплектующие</h6>
+                  <p>Мы высоко ценим наших клиентов, поэтому используем комплектующие
+                    тех брендов, качество которых не вызывает сомнений. Все компоненты заранее
+                    тестируются, поэтому корпус, блок питания, оперативная память,
+                    система охлаждения и все остальное идеально подходит друг к другу.</p>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantages-img-cont">
+                  <img src="img/advantages-2.png" alt="">
+                </div>
+                <div class="advantages-list-item-text">
+                  <h6>Профессиональная сборка</h6>
+                  <p>Мы все собираем вручную и тестируем сами, поэтому гарантируем высокое качество
+                    сборки вашего игрового компьютера. Благодаря системе укладки кабеля -
+                    Cable Managment System - кабеля никогда не путаются и не мешают воздуху
+                    циркулировать, что повышает эффективность охлаждающих систем.</p>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantages-img-cont">
+                  <img src="img/advantages-3.png" alt="">
+                </div>
+                <div class="advantages-list-item-text">
+                  <h6>Лучшие игровые девайсы</h6>
+                  <p>Наши компьютеры созданы для игр, поэтому мы выбираем только лучшее.
+                    Мы используем только те комплектующие и оборудование, которые готовы купить
+                    сами.Все лучшее для вас.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-    </div>
-  </header>
-</body>
+    </main>
+  </body>
 </html>
